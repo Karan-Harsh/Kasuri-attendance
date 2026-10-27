@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --color-brand-50: #fff8eb;
+  --color-brand-100: #feeac7;
+  --color-brand-200: #fdd28a;
+  --color-brand-500: #f59e0b;
+  --color-brand-600: #d97706;
+  --color-brand-700: #b45309;
+  --color-brand-800: #92400e;
+}
+
+body {
+  @apply bg-stone-50 text-stone-800 antialiased;
+}
+
+input, select, textarea {
+  @apply rounded-lg border border-stone-300 bg-white px-3 py-2 text-base outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-200;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+  main { padding: 0 !important; margin: 0 !important; }
+}

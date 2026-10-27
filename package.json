@@ -1,0 +1,39 @@
+{
+  "name": "kasuri",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Restaurant staff attendance and salary manager (Windows desktop app)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "app": "tauri dev",
+    "package": "tauri build",
+    "tauri": "tauri",
+    "demo": "tsx scripts/seed.ts",
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.4",
+    "@tauri-apps/plugin-dialog": "^2.8.3",
+    "@tauri-apps/plugin-sql": "^2.6.0",
+    "lucide-react": "^1.62.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@tauri-apps/cli": "^2.12.4",
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.5",
+    "vitest": "^3.2.7"
+  }
+}
